@@ -23,5 +23,23 @@ public class Counter {
         return this.value;
     }
     
+    public void inc()
+    {
+        this.value+=this.inc;
+    }
     
+    public String toString()
+    {
+        return "Valeur : "+this.value+" ( incrément : "+this.inc+" )";
+    }
+    
+    public boolean equals(Counter ctr)
+    {
+        boolean verif;
+        if(this.value==ctr.value)
+            verif = true; 
+        else
+            verif = false;
+        return verif;
+    }
 }
