@@ -9,6 +9,17 @@ public class TpCounter {
 
     public static void main(String[] args) {
         
+        Counter ctr = new Counter();
+        System.out.println(ctr.toString());
+        ctr.inc();
+        System.out.println(ctr.toString());
+                
+        Counter ctr2 = new Counter(2,2);
+        System.out.println(ctr2.toString());
+        ctr2.inc();
+        System.out.println(ctr2.toString());
+                
+        
     }
     
 }

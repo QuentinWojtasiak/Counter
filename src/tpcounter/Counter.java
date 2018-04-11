@@ -9,7 +9,7 @@ public class Counter {
     public Counter()
     {
         value=0;
-        inc=0;
+        inc=1;
     }
     
     public Counter(int value,int inc)
@@ -30,7 +30,7 @@ public class Counter {
     
     public String toString()
     {
-        return "Valeur : "+this.value+" ( incrément : "+this.inc+" )";
+        return "Valeur : "+this.getValue()+" ( incrément : "+this.inc+" )";
     }
     
     public boolean equals(Counter ctr)
